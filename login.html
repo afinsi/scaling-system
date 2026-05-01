@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="js/login.js" ></script>
+    <title>Lumix</title>
+</head>
+<body>
+    <main class="container">
+
+        <!--Register-->
+        <form id="registerForm">
+            <h1>Register Lumix</h1>
+
+            <input id="username" placeholder="User" type="text"><br><br>
+            <input id="email" placeholder="Email" type="email"><br><br>
+            <input id="password" placeholder="Password" type="password"><br><br>
+    
+            <button type="submit">Register</button>
+            <p>Tens conta? <a href="#" onclick="showLogin(); return false">Login</a> </p>
+            </form>
+
+        <!--Login-->
+        <form id="loginForm" hidden >
+            <h1>Login Lumix</h1>
+
+            <input id="loginEmail" placeholder="Email" type="email"><br><br>
+            <input id="loginPassword" placeholder="Password" type="password"><br><br>
+    
+            <button type="submit">Login</button>
+            <p>Não tens conta? <a href="#" onclick="showRegister(); return false">Register</a> </p>
+        </form>
+    </main>
+</body>
+</html>
