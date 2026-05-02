@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const { data } = await client.auth.getSession()
 
     if (!data.session) {
-        window.location.href = "index.html"
+        window.location.href = "login.html"
     }
 
 })
